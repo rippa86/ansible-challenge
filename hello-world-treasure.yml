@@ -6,4 +6,4 @@
 
     - name: Display the challge word 
       debug:
-        msg: Hello World the challge word is AAP
+        msg: The Hello World Treasure Hunt challenge word is AAP
