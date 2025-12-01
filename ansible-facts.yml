@@ -11,5 +11,7 @@
     - name: Display stats
       ansible.builtin.set_stats:
         data:
-          cpu_arch: "{{ hostvars['node1']ansible_facts.machine }}"
-          os_family: "{{ hostvars['node1']ansible_facts.os_family }}"
+          cpu_arch: "{{ ansible_facts.machine }}"
+          os_family: "{{ ansible_facts.os_family }}"
+      delegate_to: node1
+      run_once: true
