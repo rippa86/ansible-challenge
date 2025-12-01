@@ -1,0 +1,9 @@
+---
+- name: Hello World Ansible Island Challenge Treasurehunt
+  gather_facts: true
+  hosts: all
+  tasks:
+
+    - name: Display facts
+      debug:
+        var: ansible_facts
