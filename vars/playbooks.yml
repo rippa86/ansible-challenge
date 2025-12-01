@@ -23,7 +23,7 @@ controller_templates:
     survey_enabled: false
     project: "ansible-island"
     playbook: "secret-word.yml"
-  - name: "Ansible Facts"
+  - name: "Apache Install"
     job_type: run
     inventory: Workshop Inventory
     execution_environment: Default execution environment
@@ -32,4 +32,11 @@ controller_templates:
     playbook: "apache/apache_role_install.yml"
     credentials:
       - "Workshop Credentials"
-    privlege_escalation: true
+    become_enabled: true
+  - name: "survivor"
+    job_type: run
+    inventory: Workshop Inventory
+    execution_environment: Default execution environment
+    survey_enabled: false
+    project: "ansible-island"
+    playbook: "island-survivor.yml"
