@@ -11,4 +11,5 @@
     - name: Display facts
       ansible.builtin.set_stats:
         data:
-          name: "{{ ansible_facts.ansible_machine }}"
+          cpu_arch: "{{ ansible_facts.ansible_machine }}"
+          os_family: "{{ ansible_facts.os_family }}"
