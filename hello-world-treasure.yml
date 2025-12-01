@@ -3,7 +3,6 @@
   gather_facts: false
   hosts: localhost
   tasks:
-
     - name: Display the challge word 
-      debug:
+      ansible.builtin.debug:
         msg: The Hello World Treasure Hunt challenge word is AAP

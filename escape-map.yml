@@ -1,0 +1,12 @@
+---
+- name: Playbook to configure ansible controller post installation
+  hosts: localhost
+  connection: local
+
+  pre_tasks:
+    - name: Include vars from controller_configs directory
+      ansible.builtin.include_vars: 
+        file: playbooks.yml
+
+  roles:
+    - infra.controller_configuration.dispatch

@@ -1,0 +1,13 @@
+controller_templates:
+  - name: "Ansible Facts"
+    job_type: run
+    inventory: Workshop Inventory
+    execution_environment: Default execution environment
+    survey_enabled: false
+    project: "ansible-island"
+    playbook: "ansible-facts.yml"
+    extra_vars: 
+      colour: Black
+      your_name: David
+    credentials:
+      - "Workshop Credentials"
