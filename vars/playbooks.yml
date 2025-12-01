@@ -6,8 +6,30 @@ controller_templates:
     survey_enabled: false
     project: "ansible-island"
     playbook: "ansible-facts.yml"
-    extra_vars: 
-      colour: Black
-      your_name: David
     credentials:
       - "Workshop Credentials"
+    use_fact_cache: true
+  - name: "Hello World"
+    job_type: run
+    inventory: Workshop Inventory
+    execution_environment: Default execution environment
+    survey_enabled: false
+    project: "ansible-island"
+    playbook: "hello-world-treasure.yml"
+  - name: "Secret Word"
+    job_type: run
+    inventory: Workshop Inventory
+    execution_environment: Default execution environment
+    survey_enabled: false
+    project: "ansible-island"
+    playbook: "secret-word.yml"
+  - name: "Ansible Facts"
+    job_type: run
+    inventory: Workshop Inventory
+    execution_environment: Default execution environment
+    survey_enabled: false
+    project: "ansible-island"
+    playbook: "apache/apache_role_install.yml"
+    credentials:
+      - "Workshop Credentials"
+    privlege_escalation: true

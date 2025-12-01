@@ -5,5 +5,5 @@
   tasks:
 
     - name: Display facts
-      anisble.builtin.debug:
+      ansible.builtin.debug:
         var: ansible_facts

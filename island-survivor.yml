@@ -1,0 +1,14 @@
+---
+- name: Hello World Ansible Island Challenge Treasurehunt
+  gather_facts: false
+  hosts: localhost
+  tasks:
+    - name: Display the challenge word 
+      ansible.builtin.debug:
+        msg: "{{ name }}, is trying to escape the island!"
+    
+    - name: Export your name to the the role!
+      ansible.builtin.set_stats:
+        data:
+          # The variable name on the left is what the NEXT job will see
+          name: "{{ name }}"
