@@ -9,4 +9,4 @@
         file: playbooks.yml
 
   roles:
-    - infra.controller_configuration.dispatch
+    - infra.aap_configuration.dispatch
