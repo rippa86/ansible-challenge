@@ -4,7 +4,7 @@ controller_templates:
     inventory: Workshop Inventory
     execution_environment: Default execution environment
     survey_enabled: false
-    project: "ansible-island"
+    project: "{{ project }}"
     playbook: "ansible-facts.yml"
     credentials:
       - "Workshop Credentials"
@@ -14,21 +14,21 @@ controller_templates:
     inventory: Workshop Inventory
     execution_environment: Default execution environment
     survey_enabled: false
-    project: "ansible-island"
+    project: "{{ project }}"
     playbook: "hello-world-treasure.yml"
   - name: "Secret Word"
     job_type: run
     inventory: Workshop Inventory
     execution_environment: Default execution environment
     survey_enabled: false
-    project: "ansible-island"
+    project: "{{ project }}"
     playbook: "secret-word.yml"
   - name: "Apache Install"
     job_type: run
     inventory: Workshop Inventory
     execution_environment: Default execution environment
     survey_enabled: false
-    project: "ansible-island"
+    project: "{{ project }}"
     playbook: "apache/apache_role_install.yml"
     credentials:
       - "Workshop Credentials"
@@ -38,5 +38,5 @@ controller_templates:
     inventory: Workshop Inventory
     execution_environment: Default execution environment
     survey_enabled: false
-    project: "ansible-island"
+    project: "{{ project }}"
     playbook: "island-survivor.yml"
