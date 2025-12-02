@@ -8,7 +8,7 @@ controller_templates:
     playbook: "ansible-facts.yml"
     credentials:
       - "Workshop Credentials"
-    use_fact_cache: true
+   #use_fact_cache: true
   - name: "Hello World"
     job_type: run
     inventory: Workshop Inventory
